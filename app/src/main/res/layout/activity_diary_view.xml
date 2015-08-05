@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    tools:context="com.example.liuqimin.lifary.DiaryView"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="MM-DD-YY  H:M:S"
+            android:id="@+id/timeTextView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:id="@+id/shareTextView"
+            android:text="@string/privately"
+            android:textColor="@color/dark_color"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/diaryImageView"
+                android:src="@drawable/camera"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:layout_marginTop="20dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/locationImageView"
+                    android:src="@drawable/location"
+                    android:scaleType="fitCenter"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id = "@+id/locationTextView"
+                    android:text = "sfu"
+                    android:textSize="18dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:textColor="@color/dark_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec massa aliquam erat ullamcorper hendrerit. Morbi tempor urna sed sollicitudin euismod. Nullam velit risus, aliquet a lectus quis, dapibus lacinia est. Aliquam quis elit vitae urna auctor sollicitudin. Donec in rutrum urna. Pellentesque suscipit scelerisque augue non pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae nisi sapien. In auctor enim dolor, eu ultricies augue molestie dignissim. Phasellus ultrices rhoncus urna, in porttitor diam imperdiet commodo. In non tempor metus."
+                android:id="@+id/diaryTextView"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/dark_color" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click to play"
+            android:textColor="@color/dark_color"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_sound"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:id="@+id/playAudioButton"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

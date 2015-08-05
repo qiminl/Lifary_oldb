@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="android:buttonStyle">@style/MyButton</item>
+        <item name="android:textViewStyle">@style/MyTextView</item>
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        <item name="android:imageButtonStyle">@style/MyImageButton</item>
+
+    </style>
+
+    <!-- Button -->
+    <style name="MyButton" parent="@android:style/Widget.Button">
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:textColor">@color/dark_color</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+
+    </style>
+
+    <!-- Edit Text -->
+    <style name="MyEditText" parent="@android:style/Widget.EditText">
+        <item name="android:background">@color/light_color</item>
+        <item name="android:textColor">@color/dark_color</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <!-- Action Bar -->
+    <style name="MyActionBar" parent = "@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+
+        <!-- Support library compatibility -->
+        <item name="background">@color/actionbar_background</item>
+    </style>
+
+    <!-- Action Bar Text -->
+    <style name="MyActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name = "android:textColor">@color/dark_color</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+
+    </style>
+
+
+    <!-- Text View -->
+    <style name="MyTextView"
+        parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/actionbar_background</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+
+
+    </style>
+
+    <style name="MyImageButton"
+        parent="@android:style/Widget.ImageButton">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+
+    <!-- Colors -->
+    <color name="actionbar_background">#FF9999</color>
+
+    <color name="dark_color">#595959</color>
+    <color name="light_color">#F5F5F5</color>
+
+
+</resources>
